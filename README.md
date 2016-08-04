@@ -168,7 +168,7 @@ https://github.com/ecomfe/fecs/wiki/
         componentFilter: '/api/filter'
     }
 ```
-* Pages文件夹里面放的是各个静态页面
+* Inc文件夹里面放的是各个静态页面
 * Kit里面是放的工具包，包括一些指令，filter，partial等等
 * 在使用Fis3发布时，按照页面级别分析依赖，包括各种资源，css，js，图片，放到target对应工程里
 
