@@ -83,12 +83,12 @@
 
 ### Git
 
-前端代码规范wiki
+前端代码规范wiki，百度Style
 https://github.com/ecomfe/fecs/wiki/
 
 [规范文档 How to fix](https://github.com/ecomfe/fecs/wiki/HowToFix)
 
-[IDE集成支持](https://github.com/ecomfe/fecs/wiki/FAQ#%E6%9C%89%E6%B2%A1%E6%9C%89%E9%9B%86%E6%88%90%E5%88%B0%E7%BC%96%E8%BE%91%E5%99%A8%E6%88%96-ide-%E7%9A%84%E6%94%AF%E6%8C%81)
+[IDE集成支持,省去push到icode上review一大堆代码检查不通过](https://github.com/ecomfe/fecs/wiki/FAQ#%E6%9C%89%E6%B2%A1%E6%9C%89%E9%9B%86%E6%88%90%E5%88%B0%E7%BC%96%E8%BE%91%E5%99%A8%E6%88%96-ide-%E7%9A%84%E6%94%AF%E6%8C%81)
 
 
 ### 目录规范
