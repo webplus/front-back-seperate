@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数据门户</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/pharos/resource/images/favicon.ico">
+    <script src="/static/target/lib/lib.debug.js"></script>
+    <script>
+        var hmt = hmt || [];
+        hmt.push([
+            '_setAccount',
+            '46a65da7a459a451db7669d251e16ce0'
+        ]);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/static/target/log/static/log.css" />
+</head>
+<body id="app" name="ggg">
+    <script>
+    var respInfo = {
+        cnf: [
+            {
+                layout: 0,
+                cls: 'page-980',
+                range: {
+                    min: 0,
+                    max: 1281
+                }
+            },
+            {
+                layout: 1,
+                cls: 'page-1180',
+                range: {
+                    min: 1281,
+                    max: 1419
+                }
+            },
+            {
+                layout: 2,
+                cls: 'page-1380',
+                range: {
+                    min: 1419,
+                    max: 9999
+                }
+            }
+        ],
+        curLayout: 1
+    };
+    (function () {
+        var resizeTimer;
+        $(window).on('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                responsive();
+            }, 100);
+        });
+        function responsive() {
+            var body = $('body');
+            var width = $(window).width() > $(document).width() ? $(document).width() : $(window).width();
+            var cnf = respInfo.cnf;
+            body.removeClass(cnf[respInfo.curLayout].cls);
+            for (var i = 0; i < cnf.length; i++) {
+                if (width >= cnf[i].range.min && width <= cnf[i].range.max && !body.hasClass(cnf[i].cls)) {
+                    body.addClass(cnf[i].cls);
+                    respInfo.curLayout = cnf[i].layout;
+                    break;
+                }
+
+            }
+        }
+
+        setTimeout(function () {
+            responsive();
+        }, 0);
+    })();
+    </script>
+    <!--@require "/styles/css/nav.css"-->
+    <top-nav :menu-data="topnavMenu" :loginname="loginName" :rootpath="rootPath"></top-nav>
+    <menu></menu>
+    <div class="wrap" id="wrap">
+        <div class="pub-box pub-box-ps">
+            <div class="pub-box-pl">
+                <div class="pub-box-menu">
+                    <sidebar :current="currentSidebar"></sidebar>
+                </div>
+            </div>
+            <router-view name="router"></router-view>
+        </div>
+    </div>
+    <dialog v-ref:fileadd-dialog="" @callback="showFileDialog=false" title="提示" :style="" footer-text="关闭" :show-footer="{showFooterCancel:false,showFooterConfirm:true}" :show.sync="showFileDialog" :content="FileaddContent"></dialog>
+    <div id="footer" style="text-align: center">
+        <p>
+            Copyright &copy;2016 Baidu. All Rights Reserved.
+        </p>
+        <p>
+            百度糯米版权所有
+        </p>
+        <script>
+        $(window).on('scroll', function () {
+            var top = $(this).scrollTop();
+            if (top > 500) {
+                $('#btn_goptop').fadeIn();
+            }
+            else {
+                $('#btn_goptop').hide();
+            }
+        });
+        $('.gotop').on('click', function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+        });
+        </script>
+    </div>
+    <script>
+    // 异步加载js
+    function loadScript(src, hdl) {
+        var node = document.createElement('script');
+        var script = document.getElementsByTagName('script')[0];
+        node.src = src;
+        node.type = 'text/javascript';
+        node.async = true;
+
+        node.onload = node.onerror = node.onreadystatechange = function () {
+            /loaded|complete|undefined/.test(node.readyState) && (function () {
+                node.onload = node.onerror = node.onreadystatechange = null;
+                node.parentNode.removeChild(node);
+                node = undefined;
+                hdl && hdl();
+            }());
+        };
+
+        script.parentNode.insertBefore(node, script);
+    }
+    var bdhmProtocol = (('https:' === document.location.protocol) ? ' https://' : ' http://');
+
+    //    现网首页ip
+    var baidu_url = bdhmProtocol + 'hm.baidu.com/h.js?46a65da7a459a451db7669d251e16ce0';
+    loadScript(baidu_url);
+
+    // 事件跟踪代码的封装
+    $(function () {
+        var Stat = {
+            init: function () {
+                $(document).on('click', function (e) {
+                    var target = e.target;
+                    var stat = $(target).attr('data-stat');
+                    var statTname = $(target).attr('data-targetname');
+                    var statAname = $(target).attr('data-actionname');
+
+                    if (stat) {
+                        try {
+                            hmt.push([
+                                '_trackEvent',
+                                statTname,
+                                statAname
+                            ]);
+                            // console.log(target.tagName +" | " + stat +" | "+ stat_tname +" | "+ stat_aname);
+                        }
+                        catch (e) {
+                            console.log(e);
+                        }
+                    }
+
+                });
+            }
+        };
+        Stat.init();
+    });
+    </script>
+
+<script type="text/javascript" src="/static/target/log/static/log.js"></script>
+<script>
+    var PHPCONF = {};
+    require.async(['/views/log/log']);
+    </script>
+</body>
+</html>
