@@ -81,8 +81,8 @@
    >
    > `fis.require.paths.splice(1, 0, '../../node_modules');`
 
-### Git
-
+### Git托管
+使用Git托管代码，抛弃svn，集中式管理->分布式管理代码的转变
 前端代码规范wiki，百度Style
 https://github.com/ecomfe/fecs/wiki/
 
