@@ -81,7 +81,7 @@
    >
    > `fis.require.paths.splice(1, 0, '../../node_modules');`
 
-### git
+### Git
 
 前端代码规范wiki
 https://github.com/ecomfe/fecs/wiki/
