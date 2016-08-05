@@ -205,7 +205,7 @@ https://github.com/ecomfe/fecs/wiki/
    ```
    fis3 release dev -wL -f ./{工程目录}/fis-conf.js
    ```
-4. 本地环境与测试环境代码静态资源*rewrite*映射
+4. 本地环境与测试环境代码静态资源*rewrite*映射  
    访问个人`http://zjc.pharos.baidu.com/`，静态资源映射到本地，其他资源，主要是php接口直接使用个人测试环境的接口，*fiddler*的升级版  
    我这里使用的apache作为示例，若使用*nginx*，原理相当
     * 搭建apache环境 
