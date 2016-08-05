@@ -194,7 +194,7 @@ https://github.com/ecomfe/fecs/wiki/
 ## 开发环境
 
 1. Source Map
-  开发者开发时，面对的压缩的代码，这里支持开发期代码支持，像这样  
+  开发者开发时，面对压缩的代码，对开发者不友好，，像这样简化了开发调试难度  
   ![Source Map](https://github.com/earlymeme/front-back-seperate/blob/master/sourcemap.png)
   
 2. debug命令，生成debug版文件  
