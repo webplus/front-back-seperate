@@ -7,7 +7,7 @@
             <div class="moni-box moni-box-conf">
                 <div class="moni-basic">
                     <div class="moni-elem">
-                        <label for="" class="moni-label">日志归属：</label>
+                        <label for="" class="moni-label">11：</label>
                         <div class="moni-elem-r moni-elem-rb">
                             <span class="selectbox">
                                 <select id=""><option value="1">运营流水</option><option value="2">优惠金额</option><option
