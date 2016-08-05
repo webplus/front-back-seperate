@@ -231,7 +231,7 @@ https://github.com/ecomfe/fecs/wiki/
  fis3 pharos <project name>
 ```
 
-### 使用ES6，ES&
+### 使用ES6，ES7
    
   支持es6,es7语法，Babel 作为一个源到源的编译器不可能呈现所有 ES6 标准库中的新特性，例如 Map 和 Set 构造器和 Array 下的一些新方法，需要
 ```
