@@ -246,7 +246,19 @@ https://github.com/ecomfe/fecs/wiki/
 
 - 为什么不使用fis3自带的server？
     因为我在fis-conf.js里面覆写了local-deliver插件规则，所以你执行```fis3 release -f ./{目录名}/fis-conf.js```，是发布到父级目录的，因此需要你自己搭一个服务器，把你的根目录设成fe的父目录 [替代内置Server](http://fis.baidu.com/fis3/docs/beginning/debug.html#%E6%9B%BF%E4%BB%A3%E5%86%85%E7%BD%AEServer)
-
+- 配置文件 env.js
+```
+/**
+ * @file 环境配置
+ * @author zhujianchen@baidu.com
+ * @description 配置
+ */
+export default {
+    env: 'dev'
+};
+```
+  文件引入时，使用`import config from 'env';
+           let env = config.env;` from的字符串不要改，否者会找不到env.js
 
 ###TODO
 - 如何用Vue开发组件，怎么开发？
