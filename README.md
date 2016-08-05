@@ -193,12 +193,19 @@ https://github.com/ecomfe/fecs/wiki/
 
 ## 开发环境
 
-1. 浏览器自动刷新  
+1. Source Map
+  开发者开发时，面对的压缩的代码，这里支持开发期代码支持，像这样  
+  ![Source Map](https://github.com/earlymeme/front-back-seperate/blob/master/sourcemap.png)
+  
+2. debug命令，生成debug版文件  
+  为了方便开发者，特定在使用Fis3 -w监听文件时，使用了debug命令，关掉资源压缩命令和hash等某些线上才用到的优化。 
+  
+3. 浏览器自动刷新  
   在__src__目录执行命令：
    ```
    fis3 release dev -wL -f ./{工程目录}/fis-conf.js
    ```
-2. 本地环境与测试环境代码静态资源*rewrite*映射
+4. 本地环境与测试环境代码静态资源*rewrite*映射
    访问个人`http://zjc.pharos.baidu.com/`，静态资源映射到本地，其他资源，主要是php接口直接使用个人测试环境的接口，*fiddler*的升级版  
    我这里使用的apache作为示例，若使用*nginx*，原理相当
     * 搭建apache环境 
@@ -217,13 +224,6 @@ https://github.com/ecomfe/fecs/wiki/
     * 配置host 
       `127.0.0.1 zjc.pharos.baidu.com`
     * done，enjoy it
-    
-3. Source Map
-  开发者开发时，面对的压缩的代码，这里支持开发期代码支持，像这样  
-  ![Source Map](https://github.com/earlymeme/front-back-seperate/blob/master/sourcemap.png)
-  
-4. debug命令，生成debug版文件  
-  为了方便开发者，特定在使用Fis3 -w监听文件时，使用了debug命令，关掉资源压缩命令和hash等某些线上才用到的优化。 
 
 ### 新建工程
 
