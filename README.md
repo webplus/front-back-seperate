@@ -114,10 +114,10 @@ https://github.com/ecomfe/fecs/wiki/
     发布后的资源都放置在这里
 
 ###目录结构说明
-  > Src 
-    源代码文件，在这里写代码，
-	> Target 
-		发布后的资源，开发者开发期间不需要关注
+> Src 
+> 源代码文件，在这里写业务代码  
+> Target 
+>	发布后的资源，它是压缩的，对开发者不友好的，开发者开发期间不需要关注
 	
 * Components里面放的是vue组件，
 * Views里面放的是各个页面的Vue
@@ -223,6 +223,11 @@ https://github.com/ecomfe/fecs/wiki/
       `127.0.0.1 zjc.pharos.baidu.com`
     
     * done，enjoy it
+3. Source Map
+  开发者开发时，面对的压缩的代码，这里支持开发期代码支持，像这样
+  ![Source Map](https://share.weiyun.com/f2b11a8ef62d16190d1c1ae92e55521c),
+4. debug命令，生成debug版文件
+  为了方便开发者，特定在使用Fis3 -w监听文件时，使用了debug命令，关掉资源压缩命令和hash等某些线上才用到的优化。 
 
 ### 新建工程
 
