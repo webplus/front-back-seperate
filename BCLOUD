@@ -1,1 +1,0 @@
-BUILD_SUBMITTER -x -m baidu/bn-data-platform/log-monitor-fe -c "cd baidu/bn-data-platform/log-monitor-fe && mkdir output && cp BCLOUD ./output/" -u ./
