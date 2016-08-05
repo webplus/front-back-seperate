@@ -210,6 +210,7 @@ https://github.com/ecomfe/fecs/wiki/
    我这里使用的apache作为示例，若使用*nginx*，原理相当
     * 搭建apache环境 
     * 在pharos目录新建`.htaccess`文件，然后删掉下面子工程里的`.htacess`（这里htacess规则的权重是最高的）代码如下：
+    
         ```
       Options All Indexes FollowSymLinks MultiViews
       RewriteEngine on
