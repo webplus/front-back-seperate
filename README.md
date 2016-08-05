@@ -224,7 +224,7 @@ https://github.com/ecomfe/fecs/wiki/
     
     * done，enjoy it
 3. Source Map
-  开发者开发时，面对的压缩的代码，这里支持开发期代码支持，像这样
+  开发者开发时，面对的压缩的代码，这里支持开发期代码支持，像这样  
   ![Source Map](https://github.com/earlymeme/front-back-seperate/blob/master/sourcemap.png),
 4. debug命令，生成debug版文件
   为了方便开发者，特定在使用Fis3 -w监听文件时，使用了debug命令，关掉资源压缩命令和hash等某些线上才用到的优化。 
