@@ -1,20 +1,14 @@
 {
   "name": "fe",
-  "description": "前端工程",
+  "description": "仅安装生产环境依赖的模块，非开发期依赖",
   "author": "zjc",
   "private": true,
   "scripts": {},
   "dependencies": {
     "bluebird": "^3.4.1",
-    "process": "^0.11.6"
+    "browser": "^0.2.6",
+    "process": "^0.11.7"
   },
-  "babel": {
-  },
-  "devDependencies": {
-    "babel-core": "6.x.x",
-    "babel-plugin-transform-runtime": "6.x.x",
-    "babel-preset-es2015": "6.x.x",
-    "babel-preset-stage-1": "6.x.x",
-    "babel-runtime": "6.x.x"
-  }
+  "babel": {},
+  "devDependencies": {}
 }
