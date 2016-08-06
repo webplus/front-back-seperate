@@ -67,9 +67,8 @@
         请配合 [mod.js](https://github.com/fex-team/mod/blob/master/mod.js) 一起使用
     * fis3-hook-node_modules  
       fis3 对npm的node_modules模块的支持
-    
+    --------
     注：
-    
     1. fis-optimizer-clean-css fis-optimizer-uglify-js    
     fis3内置，不需要安装
     2. 语法编译插件可以自由选择，当你需要用哪个时，就安装对应的plugin，建议使用 babel，node-sass，vue-component，前三个，会让你的开发的事半功倍  
