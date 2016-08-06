@@ -68,14 +68,13 @@
     * fis3-hook-node_modules  
       fis3 对npm的node_modules模块的支持  
       
-    ***
     
-    注：
-    1. fis-optimizer-clean-css fis-optimizer-uglify-js    
+注：
+1. fis-optimizer-clean-css fis-optimizer-uglify-js    
     fis3内置，不需要安装
-    2. 语法编译插件可以自由选择，当你需要用哪个时，就安装对应的plugin，建议使用 babel，node-sass，vue-component，前三个，会让你的开发的事半功倍  
+2. 语法编译插件可以自由选择，当你需要用哪个时，就安装对应的plugin，建议使用 babel，node-sass，vue-component，前三个，会让你的开发的事半功倍  
     _当你用到哪个plugin时，fis会匹配对应的plugin，所以就算有你没有安装的plugin，如果没有匹配到对应的规则，是不会报错的，比如你用typescript写了一个ts文件，但是你的项目里没有用到这个文件，即使你没有安装typescript的parser，也没关系_
-    3. 为什么建议全局安装？     
+3. 为什么建议全局安装？     
        因为鉴于我们项目在`__src__`目录下会有很多个工程，每个工程会有一个`fis-conf.js`，fis3在去查找安装模块时，会首先找到`fis-conf.js`所在目录下的`node_modules`，如果没有，会去找全局安装的`node_modules`。
    > 你可能会问，那我可以放在我的大工程`fe`目录下吗？ 
    > 
