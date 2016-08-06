@@ -67,7 +67,7 @@
         请配合 [mod.js](https://github.com/fex-team/mod/blob/master/mod.js) 一起使用
     * fis3-hook-node_modules  
       fis3 对npm的node_modules模块的支持
-    --------
+    ***
     注：
     1. fis-optimizer-clean-css fis-optimizer-uglify-js    
     fis3内置，不需要安装
