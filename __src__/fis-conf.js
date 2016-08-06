@@ -3,7 +3,7 @@
  * @author zhujianchen@baidu.com
  */
 var config = {
-    root: 'static/target', // 大工程的目录名
+    root: 'front-back-seperate/target', // 大工程的目录名,相当于服务器根目录放了一个front-back-seperate目录结构
     name: 'lib' // 小工程的目录名
 };
 
