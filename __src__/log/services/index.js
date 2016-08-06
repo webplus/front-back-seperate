@@ -13,30 +13,13 @@ export default {
      * 新增组件
      *
      * @param {string} nameSpace 命名空间
-     * @param {string} componentStrId 组件ID
-     * @param {string} name 组件名
-     * @param {string} creator 创建者
-     * @param {string} tier2Manager 负责经理
-     * @param {string} description 描述
      * @return {Function} Promise
      */
     addNewComponent({
-        nameSpace,
-        componentStrId,
-        name,
-        creator,
-        notificationMails,
-        tier2Manager,
-        description
+        nameSpace
     }) {
         return window.Vue.http.post(interfaces[env].component, {
             nameSpace,
-            componentStrId,
-            name,
-            creator,
-            notificationMails,
-            tier2Manager,
-            description
         });
     },
 
@@ -55,13 +38,10 @@ export default {
      * 审核员操作通过或不通过时，调用接口保存审核结果
      *
      * @param {string} action 审核动作
-     * @param {string} operator 操作人员
-     * @param {string} actionComment 审核意见
-     * @param {string} componentId 组件ID
      * @return {Function} Promise
      */
-    setApprovalResult({action, operator, actionComment, componentId}) {
-        return window.Vue.http.post(interfaces[env].component, {action, operator, actionComment, componentId});
+    setApprovalResult({action}) {
+        return window.Vue.http.post(interfaces[env].component, {action});
     },
 
     /**
@@ -90,7 +70,6 @@ export default {
      *
      * @param {Object} options 接口接收参数
      * @param {string} options.nameSpace 命名空间
-     * @param {string} options.tier2Manager 负责经理
      * @return {Function} Promise
      */
     filterComponentList(options) {

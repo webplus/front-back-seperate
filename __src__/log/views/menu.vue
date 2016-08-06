@@ -2,18 +2,18 @@
     <div class="nav-head" id="search_box_{{id}}" :style="menuStyle" v-show="menuShow" vuec>
         <div class="cnt">
             <div class="logo-dt">
-                <h1 class="logo"><a id="nav_href" href="#" title="百糯指标体系"><img id="nav_home"
-                                                                                  src="../styles/img/is-logo.png"
-                                                                                  alt="百糯指标体系" width="186" height="47">
+                <h1 class="logo"><a id="nav_href" href="#" title=""><img id="nav_home"
+                                                                                  src=""
+                                                                                  alt="" width="186" height="47">
                 </a></h1>
             </div>
             <div class="nav" id="main-menu">
                 <ul>
                     <li class="cur">
-                        <a href="log.html">日志埋点管理</a>
+                        <a href="log.html">menu1</a>
                     </li>
                     <li class="">
-                        <a href="monitor.html">日志埋点监控</a>
+                        <a href="monitor.html">menu2</a>
                     </li>
                 </ul>
             </div>

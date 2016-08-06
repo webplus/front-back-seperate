@@ -1,7 +1,7 @@
 <template>
     <div id="list" vuec>
         <div class="pub-box-t">
-            <h2><span>埋点审核列表</span></h2>
+            <h2><span>demo1</span></h2>
             <div class="filter-list">
                 <search-box label="关键字" placeholder="创建人/指标名称" hint="搜索" @search:text="search"
                             :text.sync="searchKeyword"></search-box>
@@ -125,7 +125,7 @@
                 this.page = page
             },
             changHash(unit) {
-              
+
             }
         }
     }

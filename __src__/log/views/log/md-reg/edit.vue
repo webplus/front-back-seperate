@@ -1,13 +1,13 @@
 <template>
     <div id="edit" vuec>
         <div class="pub-box-t">
-            <h2><span>新增埋点</span></h2>
+            <h2><span>demo</span></h2>
         </div>
         <div class="pub-box-c">
             <div class="moni-box moni-box-conf">
                 <div class="moni-basic">
                     <div class="moni-elem">
-                        <label for="" class="moni-label">日志归属：</label>
+                        <label for="" class="moni-label">11：</label>
                         <div class="moni-elem-r moni-elem-rb">
                             <span class="selectbox">
                                 <select id=""><option value="1">运营流水</option><option value="2">优惠金额</option><option
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="moni-elem">
-                        <label for="" class="moni-label"><em class="required">*</em>埋点值：</label>
+                        <label for="" class="moni-label"><em class="required">*</em>a：</label>
                         <div class="moni-elem-r">
                             <div class="moni-elem-md" data-elems="md">
                                 <input type="text" id="mdv" data-elems="mdv" class="input-text verify" value=""
@@ -29,39 +29,39 @@
 
                             </div>
                             <div class="md-val">
-                                <a href="javascript:;" class="md-val-add" @click.prevent="addMd"><i></i>添加埋点</a>
+                                <a href="javascript:;" class="md-val-add" @click.prevent="addMd"><i></i>b</a>
                             </div>
                         </div>
                     </div>
                     <div class="moni-elem">
-                        <label class="moni-label" for=""><em class="required">*</em>上线日期：</label>
+                        <label class="moni-label" for=""><em class="required">*</em>c：</label>
                         <div class="moni-elem-r">
                             <div id="date_sel"><input type="text" id="" class="input-text verify" value=""></div>
                         </div>
                     </div>
                     <div class="moni-elem moni-elem-txarea">
-                        <label for="" class="moni-label"><em class="required">*</em>埋点描述：</label>
+                        <label for="" class="moni-label"><em class="required">*</em>d：</label>
                         <div class="moni-elem-r"><textarea class="txarea verify" id="" placeholder="" cols="30"
                                                            rows="5"></textarea></div>
                     </div>
                     <div class="moni-elem moni-elem-upld">
-                        <label for="owner_manager" class="moni-label"><em class="required">*</em>埋点截图：</label>
+                        <label for="owner_manager" class="moni-label"><em class="required">*</em>e：</label>
                         <div class="moni-elem-r">
                             <file-add></file-add>
                         </div>
                     </div>
                     <div class="moni-elem">
-                        <label for="owner_manager" class="moni-label"><em class="required">*</em>负责经理：</label>
+                        <label for="owner_manager" class="moni-label"><em class="required">*</em>f：</label>
                         <div class="moni-elem-r">
                             <input-sug input-id="owner_manager" :sug-data="managers"></input-sug>
                         </div>
                     </div>
                     <div class="moni-elem">
-                        <label for="" class="moni-label"><em class="required">*</em>RD Owner：</label>
+                        <label for="" class="moni-label"><em class="required">*</em>g：</label>
                         <div class="moni-elem-r"><input type="text" id="" class="input-text verify" value=""></div>
                     </div>
                     <div class="moni-elem">
-                        <label for="" class="moni-label"><em class="required">*</em>所属业务线：</label>
+                        <label for="" class="moni-label"><em class="required">*</em>h：</label>
                         <div class="moni-elem-r"><input type="text" id="" class="input-text verify" value=""></div>
                     </div>
 
