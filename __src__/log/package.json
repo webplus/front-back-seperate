@@ -1,7 +1,7 @@
 {
   "name": "log",
   "description": "仅安装生产环境依赖的模块，非开发期依赖",
-  "author": "zjc1",
+  "author": "zjc12",
   "private": true,
   "scripts": {},
   "dependencies": {
