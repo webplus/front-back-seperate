@@ -69,7 +69,8 @@
       fis3 对npm的node_modules模块的支持
     
     注：
-    1. fis-optimizer-clean-css fis-optimizer-uglify-js  
+    
+    1. fis-optimizer-clean-css fis-optimizer-uglify-js    
     fis3内置，不需要安装
     2. 语法编译插件可以自由选择，当你需要用哪个时，就安装对应的plugin，建议使用 babel，node-sass，vue-component，前三个，会让你的开发的事半功倍  
     _当你用到哪个plugin时，fis会匹配对应的plugin，所以就算有你没有安装的plugin，如果没有匹配到对应的规则，是不会报错的，比如你用typescript写了一个ts文件，但是你的项目里没有用到这个文件，即使你没有安装typescript的parser，也没关系_
