@@ -4,6 +4,7 @@
  * @description rpc接口获取数据
  */
 import interfaces from 'interfaces';
+import model from 'model';
 import config from 'env';
 let env = config.env;
 
@@ -20,6 +21,10 @@ export default {
     }) {
         return window.Vue.http.post(interfaces[env].component, {
             nameSpace,
+        }).then(({data}) => {
+            // 处理一下数据
+            model.parseData(data);
+            return Promise.resolve(data);
         });
     },
 
