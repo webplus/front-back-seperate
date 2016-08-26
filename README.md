@@ -49,11 +49,11 @@
         支持 sass/scss 编译成 css。
     * fis3-parser-vue-component  
         编译Vue Component
-    * fis-parser-less-2.x
+    * fis-parser-less-2.x （可选）
         支持 less 编译成 css
-    * fis-parser-jade
+    * fis-parser-jade （可选）
         支持jade转义
-    * fis3-parser-typescript  
+    * fis3-parser-typescript （可选）  
         支持 typescript、es6 或者 jsx 编译成 js，速度相比 babel 略快，但是 es7 跟进较慢
 - 打包插件
     * fis3-deploy-skip-packed   
@@ -249,6 +249,7 @@ https://github.com/ecomfe/fecs/wiki/
 - 为什么不使用fis3自带的server？
     因为我在fis-conf.js里面覆写了local-deliver插件规则，所以你执行```fis3 release -f ./{目录名}/fis-conf.js```，是发布到父级目录的，因此需要你自己搭一个服务器，把你的根目录设成fe的父目录 [替代内置Server](http://fis.baidu.com/fis3/docs/beginning/debug.html#%E6%9B%BF%E4%BB%A3%E5%86%85%E7%BD%AEServer)
 - 配置文件 env.js
+- [Sublime Text 3语法高亮Vue](https://github.com/vuejs/vue-syntax-highlight)
 ```
 /**
  * @file 环境配置
