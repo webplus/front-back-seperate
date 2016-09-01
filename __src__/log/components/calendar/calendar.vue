@@ -759,7 +759,7 @@
 <script>
     /**
      * @file 日历
-     * @author zhujianchen@baidu.com
+     * @author zhujianchen
      * @description 先把pharos用的组件改成vue组件格式，以后再改吧
      */
     export default {

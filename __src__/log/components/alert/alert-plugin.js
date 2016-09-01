@@ -1,6 +1,6 @@
 /**
  * @file 弹窗插件方式注册，支持多个实例
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description 多个实例意味着可以动态创建多个alert component，不用在html里硬编码写<alert></alert>
  */
 function install(Vue) {

@@ -1,6 +1,6 @@
 /**
  * @file
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  */
 import store from '../vuex/store';
 import * as actions from '../vuex/actions';

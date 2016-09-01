@@ -1,6 +1,6 @@
 /**
  * @file logger
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @param {Object} collapsed collspsed
  * @param {Object} transformer state
  * @param {Object} mutationTransformer mutation

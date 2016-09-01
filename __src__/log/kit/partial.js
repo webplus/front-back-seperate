@@ -1,6 +1,6 @@
 /**
  * @file 获取url上的query
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description url的query
  * @param {string} name 参数名字
  * @return {string} value

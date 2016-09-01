@@ -1,6 +1,6 @@
 /**
  * @file 类型转换
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description
  * @param {string} val 输入
  * @return {string} val

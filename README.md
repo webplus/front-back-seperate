@@ -253,7 +253,7 @@ https://github.com/ecomfe/fecs/wiki/
 ```
 /**
  * @file 环境配置
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description 配置
  */
 export default {

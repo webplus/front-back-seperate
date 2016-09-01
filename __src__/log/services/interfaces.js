@@ -1,6 +1,6 @@
 /**
  * @file 所有后端接口url
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description 接口url
  */
 export default {

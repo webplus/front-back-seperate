@@ -1,6 +1,6 @@
 /**
  * @file
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description
  */
 export const INCREMENT = 'INCREMENT';

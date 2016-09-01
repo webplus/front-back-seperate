@@ -1,6 +1,6 @@
 /**
  * @file 工程化工具
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  */
 var config = {
     root: 'front-back-seperate/target', // 大工程的目录名,相当于服务器根目录放了一个front-back-seperate目录结构

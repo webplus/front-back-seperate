@@ -8,7 +8,7 @@ define('/views/vuex/logger', function(require, exports, module) {
   exports.default = createLogger;
   /**
    * @file logger
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @param {Object} collapsed collspsed
    * @param {Object} transformer state
    * @param {Object} mutationTransformer mutation
@@ -89,7 +89,7 @@ define('/views/vuex/middlewares', function(require, exports, module) {
       }
   }; /**
       * @file
-      * @author zhujianchen@baidu.com
+      * @author zhujianchen
       * @description
       */
   
@@ -107,7 +107,7 @@ define('/views/vuex/mutation-types', function(require, exports, module) {
   });
   /**
    * @file
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description
    */
   var INCREMENT = exports.INCREMENT = 'INCREMENT';
@@ -136,7 +136,7 @@ define('/views/vuex/store', function(require, exports, module) {
   
   function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } /**
                                                                                                                                                                                                                      * @file
-                                                                                                                                                                                                                     * @author zhujianchen@baidu.com
+                                                                                                                                                                                                                     * @author zhujianchen
                                                                                                                                                                                                                      * @description
                                                                                                                                                                                                                      */
   
@@ -185,7 +185,7 @@ define('/views/vuex/actions', function(require, exports, module) {
     };
   } /**
      * @file
-     * @author zhujianchen@baidu.com
+     * @author zhujianchen
      * @description
      */
   
@@ -269,7 +269,7 @@ define('/views/topnav', function(require, exports, module) {
       methods: {}
   }; /*
       * @file 顶部导航组件
-      * @author zhujianchen@baidu.com
+      * @author zhujianchen
       * */
   
   var _vueTemplateString = "<div class=\"topnav\" vuec1114=\"\">\n    <div class=\"topnav_cnt\">\n        <div class=\"topnav_logmsg topnav_logmsg_login\">\n            <div class=\"login\">您好，{{loginname}} <a href=\"{{rootpath}}logout\">注销</a></div>\n            <div class=\"unlogin\"><a href=\"#\">登录</a></div>\n        </div>\n        <div class=\"topnav_menu\">\n            <ul>\n                <li v-for=\"v in menuData\" :class=\"{'menu-item':1}\" data-id=\"{{v.m_name}}\"><a href=\"{{v.m_url}}\">{{v.m_name}}</a></li>\n            </ul>\n        </div>\n    </div>\n</div>";
@@ -464,7 +464,7 @@ define('/components/utils/coerceBoolean', function(require, exports, module) {
   });
   /**
    * @file 类型转换
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description
    * @param {string} val 输入
    * @return {string} val
@@ -615,7 +615,7 @@ define('/kit/filters/trim', function(require, exports, module) {
   
   /**
    * @file trim
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description
    */
   window.Vue.filter('trim', {
@@ -768,7 +768,7 @@ define('/components/dialog/dialog-plugin', function(require, exports, module) {
   
   /**
    * @file 弹窗插件方式注册，支持多个实例
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description 多个实例意味着可以动态创建多个dialog component，不用在html里硬编码写<dialog></dialog>
    * @param {Object} Vue
    */
@@ -880,7 +880,7 @@ define('/kit/partial', function(require, exports, module) {
   
   /**
    * @file 获取url上的query
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description url的query
    * @param {string} name 参数名字
    * @return {string} value
@@ -6489,7 +6489,7 @@ define('/services/interfaces', function(require, exports, module) {
   });
   /**
    * @file 所有后端接口url
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description 接口url
    */
   exports.default = {
@@ -6518,7 +6518,7 @@ define('/env', function(require, exports, module) {
   });
   /**
    * @file 环境配置
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description 配置
    */
   exports.default = {
@@ -6547,7 +6547,7 @@ define('/services/index', function(require, exports, module) {
   
   /**
    * @file 请求后端接口
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description rpc接口获取数据
    */
   
@@ -6907,7 +6907,7 @@ define('/components/calendar/calendar', function(require, exports, module) {
   
   /**
    * @file 日历
-   * @author zhujianchen@baidu.com
+   * @author zhujianchen
    * @description 先把pharos用的组件改成vue组件格式，以后再改吧
    */
   exports.default = {
@@ -8928,7 +8928,7 @@ define('/views/log/log', function(require, exports, module) {
   
   var _console; /**
                  * @file
-                 * @author zhujianchen@baidu.com
+                 * @author zhujianchen
                  */
   
   

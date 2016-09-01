@@ -1,6 +1,6 @@
 /**
  * @file 请求后端接口
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description rpc接口获取数据
  */
 import interfaces from 'interfaces';

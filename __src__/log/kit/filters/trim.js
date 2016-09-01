@@ -1,6 +1,6 @@
 /**
  * @file trim
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description
  */
 window.Vue.filter('trim', {

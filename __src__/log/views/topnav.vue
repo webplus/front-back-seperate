@@ -20,7 +20,7 @@
 <script>
     /*
      * @file 顶部导航组件
-     * @author zhujianchen@baidu.com
+     * @author zhujianchen
      * */
     import * as actions from './vuex/actions'
 

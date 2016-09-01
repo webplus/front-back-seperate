@@ -1,6 +1,6 @@
 /**
  * @file
- * @author zhujianchen@baidu.com
+ * @author zhujianchen
  * @description
  */
 import {INCREMENT, TOGGLESEARCH, MENUMUTATION} from './mutation-types';
