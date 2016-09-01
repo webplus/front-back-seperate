@@ -84,7 +84,8 @@ fis.match('{*.js,*.vue:js}', {
 }).match('::package', {
     spriter: fis.plugin('csssprites'),
 
-    /*packager: fis.plugin('deps-pack', {
+    /*按照js entry文件去打包
+    packager: fis.plugin('deps-pack', {
      useSourceMap: true, // 合并后开启 SourceMap 功能。
      'jobs/food.js': [
      // 将 main.js 加入队列
