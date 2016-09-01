@@ -2,6 +2,8 @@
  * @file 工程化工具
  * @author zhujianchen
  */
+//这2个属性影响的是本地的工程目录结构,对服务器上,会拼接/root/name/这样的url路径
+    //如果资源定位的路径没有满足你的需求,请酌情修改root,name这2个值
 var config = {
     root: 'front-back-seperate/target', // 大工程的目录名,相当于服务器根目录放了一个front-back-seperate目录结构
     name: 'log' // 小工程的目录名
